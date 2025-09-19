@@ -1,0 +1,15 @@
+{
+  "name": "aplikasi3",
+  "version": "1.0.0",
+  "description": "Membuat aplikasi ke-3",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.js"
+  },
+  "author": "Nicholas Tan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "module": "^1.2.5"
+  }
+}
