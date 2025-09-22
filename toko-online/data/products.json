@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Gaming",
+    "price": 15000000,
+    "description": "Laptop berperforma tinggi untuk kebutuhan gaming anda"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone Flagship",
+    "price": 12000000,
+    "description": "Smartphone dengan kamera canggih dan performa tinggi"
+  },
+  {
+    "id": 3,
+    "name": "Headset Wireless",
+    "price": 2500000,
+    "description": "Headset dengan kualitas suara jernih dan koneksi bluetooth stabil"
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "price": 3500000,
+    "description": "Jam tangan pintar dengan fitur kesehatan dan notifikasi real-time"
+  },
+  {
+    "id": 5,
+    "name": "Monitor 4K",
+    "price": 5000000,
+    "description": "Monitor resolusi tinggi untuk editing dan hiburan multimedia"
+  },
+  {
+    "id": 6,
+    "name": "Keyboard Mechanical",
+    "price": 1200000,
+    "description": "Keyboard dengan switch mekanikal yang responsif dan tahan lama"
+  },
+  {
+    "id": 7,
+    "name": "Mouse Gaming",
+    "price": 800000,
+    "description": "Mouse dengan DPI tinggi dan lampu RGB"
+  },
+  {
+    "id": 8,
+    "name": "Printer Inkjet",
+    "price": 2500000,
+    "description": "Printer multifungsi untuk cetak, scan, dan copy"
+  },
+  {
+    "id": 9,
+    "name": "Tablet Stylus",
+    "price": 7000000,
+    "description": "Tablet dengan dukungan stylus untuk menggambar dan menulis"
+  },
+  {
+    "id": 10,
+    "name": "Speaker Bluetooth",
+    "price": 1500000,
+    "description": "Speaker portable dengan suara bass yang kuat"
+  },
+  {
+    "id": 11,
+    "name": "Drone Kamera",
+    "price": 9500000,
+    "description": "Drone dengan kamera 4K untuk fotografi udara"
+  },
+  {
+    "id": 12,
+    "name": "Powerbank Fast Charging",
+    "price": 600000,
+    "description": "Powerbank dengan kapasitas besar dan pengisian cepat"
+  },
+  {
+    "id": 13,
+    "name": "Router WiFi 6",
+    "price": 2000000,
+    "description": "Router dengan teknologi WiFi 6 untuk koneksi stabil"
+  },
+  {
+    "id": 14,
+    "name": "Webcam HD",
+    "price": 900000,
+    "description": "Webcam kualitas tinggi untuk meeting online dan streaming"
+  },
+  {
+    "id": 15,
+    "name": "SSD 1TB",
+    "price": 2200000,
+    "description": "SSD berkecepatan tinggi untuk penyimpanan data"
+  },
+  {
+    "id": 16,
+    "name": "External Harddisk 2TB",
+    "price": 1800000,
+    "description": "Penyimpanan eksternal besar untuk backup data"
+  },
+  {
+    "id": 17,
+    "name": "Projector Portable",
+    "price": 4500000,
+    "description": "Proyektor ringan dengan kualitas gambar Full HD"
+  },
+  {
+    "id": 18,
+    "name": "Camera DSLR",
+    "price": 13500000,
+    "description": "Kamera DSLR profesional dengan lensa kit"
+  },
+  {
+    "id": 19,
+    "name": "TV LED 55 Inch",
+    "price": 9000000,
+    "description": "Televisi layar lebar dengan resolusi 4K UHD"
+  },
+  {
+    "id": 20,
+    "name": "Earbuds TWS",
+    "price": 1100000,
+    "description": "Earbuds wireless dengan noise cancelling"
+  }
+]
