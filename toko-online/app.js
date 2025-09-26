@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var engine = require('ejs-blocks'); // menggunakan ejs block
 var app = express();
+var productRouter = require('./routes/product');//tambahkan router dari product.js
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -31,6 +32,7 @@ app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstra
 // cara hapus dependensi adalah npm remove {nama dependensinya}
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/product', productRouter); //gunakan router product untuk route yang kita daftarkan tadi
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

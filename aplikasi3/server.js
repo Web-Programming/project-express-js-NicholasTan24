@@ -18,4 +18,8 @@ app.listen(port, () => {
     //"serve": "node server.js"
   //},
   // ini adalah kegunaan script yang kita buat untuk mencegah flag yang panjang atau cara lain bisa juga dengan npm run serve (sifatnya opsional)
+
+// cara install express adalah npm install -g express-generator
+// cara buat project express adalah express {--view=(ejs/pug/handlebars)} {nama-project}
+// untuk install bootstrap maka pakai npm install bootstrap
 });

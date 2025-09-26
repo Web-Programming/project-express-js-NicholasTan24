@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:3000/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Navbar dapat diambil dari getbootstrap -->
@@ -22,6 +22,13 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Keranjang</a>
                     </li>
+                    <!-- tambahkan form pencarian yang mengarah ke route/search menggunakan method get -->
+                    <form action="/search" method="get" class="d-flex mb-3">
+                        <input type="text" name="q" class="form-control me-2" placeholder="Cari produk..." 
+                        value="<%= typeof query !== 'undefined' ? query : '' %>">
+                        <button type="submit" class="btn btn-primary">Cari</button>
+                        <!-- Logika Filtering jika query kosong maka tampilkan semua produk, jika ada query maka filter berdasarkan nama produk (gunakan inludes ubah ke lowercase) -->
+                    </form>
                 </ul>
             </div>
         </div>
