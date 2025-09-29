@@ -1,7 +1,7 @@
 var express = require('express');
 //router adalah class express untuk membuat modul route
 var router = express.Router();
-var products = require('../data/products.json');
+var products = require('../../data/products.json');
 
 router.get("/:id", function(req, res, next){
     const productId = parseInt(req.params.id); // tangkap id dari url

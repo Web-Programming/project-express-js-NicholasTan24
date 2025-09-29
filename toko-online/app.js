@@ -4,14 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./app_toko_online/routes/index');// perbaikan 2
+var usersRouter = require('./app_toko_online/routes/users');
 var engine = require('ejs-blocks'); // menggunakan ejs block
 var app = express();
-var productRouter = require('./routes/product');//tambahkan router dari product.js
+var productRouter = require('./app_toko_online/routes/product');//tambahkan router dari product.js
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'app_toko_online', 'views'));//perbaikan 1
 app.engine('ejs',engine); //daftarkan engine ejs-block
 app.set('view engine', 'ejs');
 
