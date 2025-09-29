@@ -33,5 +33,5 @@ router.get('/', mainController.index);
 //   });
 // });
 
-
+// selesaikan fungsi route pencarian, pisahkan dengan controller
 module.exports = router;
