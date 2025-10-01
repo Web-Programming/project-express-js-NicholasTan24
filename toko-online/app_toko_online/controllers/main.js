@@ -5,4 +5,4 @@ const index = (req, res) => {
     title: 'Toko Online Sederhana', 
     products: products});
 }; 
-module.exports = { index };
+module.exports = { index };
