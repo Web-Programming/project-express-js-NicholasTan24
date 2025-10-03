@@ -10,6 +10,7 @@ var engine = require('ejs-blocks'); // menggunakan ejs block
 var app = express();
 var productRouter = require('./app_toko_online/routes/product');//tambahkan router dari product.js
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'app_toko_online', 'views'));//perbaikan 1
 app.engine('ejs',engine); //daftarkan engine ejs-block

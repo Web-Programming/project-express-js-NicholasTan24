@@ -14,4 +14,4 @@ const getProductById = (req, res) => {
         }
     );
 }; 
-module.exports = { getProductById};
+module.exports = {getProductById};
