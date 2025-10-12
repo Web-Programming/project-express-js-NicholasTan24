@@ -1,17 +1,43 @@
-var products = require('../../data/products.json');
+var Product = require('../models/products');
 
-const getProductById = (req, res) => {
- 	const productId = parseInt(req.params.id); // tangkap id dari url
-    const product = products.find(p => p.id === productId); // cari produk berdasarkan id
 
-    if(!product){
-        return res.status(404).send("Produk tidak ditemukan");
-    }
-    res.render("product-detail", 
-        {
-            title: product.name, 
-            product: product
+const detail = async (req, res) => {
+ 	try {
+        //const productId = parseInt(req.params.id); //Tangkap ID dari URL
+        //const product = products.find(p => p.id === productId); //Cari produk by id
+        const productId = req.params.id; // tangkap id dari url
+        const product = await Product.findById(productId); // cari produk berdasarkan id
+
+        if(!product){
+            return res.status(404).send("Produk tidak ditemukan");
         }
-    );
+        res.render("product-detail", 
+            {
+                title: product.name, 
+                product: product
+            }
+        );
+    } catch (err) {
+        res.status(404).send("Gagal memuat detail produk");
+    }
 }; 
-module.exports = {getProductById};
+
+//membuat rest api
+const apiall = async (req, res) => {
+ 	try {
+        const prod = await Product.find({}); 
+        res.status(200).json(
+            {
+                status: true,
+                message: "Data produk berhasil diambil",
+                data: prod
+            });
+    }catch(err){
+        res.status(500).json({
+            status : false,
+            message: "Gagal memuat produk"
+        });
+    }
+}; 
+
+module.exports = {detail, apiall};

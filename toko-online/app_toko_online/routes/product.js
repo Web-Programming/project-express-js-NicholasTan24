@@ -4,8 +4,8 @@ var router = express.Router();
 var productController = require('../controllers/ControllerProduct');
 var reviewController = require('../controllers/ControllerReview.js');
 
-router.get('/:id', productController.getProductById);
-router.get('/:productId/review/:reviewId', reviewController.getReview);
+router.get('/:id', productController.detail);
+router.get('/:id/review/:reviewId', reviewController.getReview);
 
 module.exports = router;
 // router.get("/:id", function(req, res, next){

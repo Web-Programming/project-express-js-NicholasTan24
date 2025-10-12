@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//panggil file koneksi database
+require('./app_toko_online/models/db'); 
 
 var indexRouter = require('./app_toko_online/routes/index');// perbaikan 2
 var usersRouter = require('./app_toko_online/routes/users');
