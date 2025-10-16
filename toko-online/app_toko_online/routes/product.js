@@ -2,10 +2,11 @@ var express = require('express');
 //router adalah class express untuk membuat modul route
 var router = express.Router();
 var productController = require('../controllers/ControllerProduct');
-var reviewController = require('../controllers/ControllerReview.js');
+// var reviewController = require('../controllers/ControllerReview.js');
 
 router.get('/:id', productController.detail);
-router.get('/:id/review/:reviewId', reviewController.getReview);
+// router.get('/:id/review/:reviewId', reviewController.getReview);
+// router.get('/all', productController.all);
 
 module.exports = router;
 // router.get("/:id", function(req, res, next){

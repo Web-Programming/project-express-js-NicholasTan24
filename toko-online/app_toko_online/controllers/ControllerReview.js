@@ -1,22 +1,8 @@
-// var products = require('../../data/products.json');
-
-// const getReview = (req, res) => {
-//  	const productId = req.params.productId;
-//     const reviewId = req.params.reviewId;
-//     // Kirim kedua parameter ke view untuk ditampilkan
-//     res.render('review-detail', {
-//         title: `Ulasan ${reviewId} untuk Produk ${productId}`,
-//         productId: productId,
-//         reviewId: reviewId
-//     });
-// };
-// module.exports = {getReview};
-
 const Product = require('../models/products');
 
 const getReview = async (req, res) => {
   try {
-    const productId = req.params.productId; 
+    const productId = req.params.id; 
     const reviewId = req.params.reviewId;   
 
     // cari produk berdasarkan ObjectId dari MongoDB
@@ -44,3 +30,17 @@ const getReview = async (req, res) => {
 };
 
 module.exports = { getReview };
+
+// var products = require('../../data/products.json');
+
+// const getReview = (req, res) => {
+//  	const productId = req.params.productId;
+//     const reviewId = req.params.reviewId;
+//     // Kirim kedua parameter ke view untuk ditampilkan
+//     res.render('review-detail', {
+//         title: `Ulasan ${reviewId} untuk Produk ${productId}`,
+//         productId: productId,
+//         reviewId: reviewId
+//     });
+// };
+// module.exports = {getReview};
