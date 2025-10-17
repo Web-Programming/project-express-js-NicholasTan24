@@ -3,11 +3,11 @@ var express = require('express');
 var router = express.Router();
 var mainController = require('../controllers/main');
 var searchController = require('../controllers/search');
-var reviewController = require('../controllers/ControllerReview');
+
 
 router.get('/', mainController.index);
 router.get('/search', searchController.searchByID);
-router.get('/:reviewId', reviewController.getReview);
+
 
 module.exports = router;
  /* GET home page. */
