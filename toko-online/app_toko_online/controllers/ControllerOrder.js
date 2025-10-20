@@ -134,7 +134,7 @@ const updateOrder = async (req, res) => {
 const getAllOrders = async (req, res) => {
   try {
     const orders = await Order.find()
-      .populate('user', 'email')
+      .populate('user',  'username email')
       .populate('orderItems.product', 'price');
 
     res.status(200).json({

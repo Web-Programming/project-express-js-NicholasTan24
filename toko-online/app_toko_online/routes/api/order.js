@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const orderController = require('../../controllers/ControllerOrder');
+const auth = require('../middleware/authMiddleware');
 
 //url create - POST (/api/product)
-router.post('/', orderController.createOrder);
+router.post('/', auth.adminOnly,orderController.createOrder);
 // //url read all - GET (/api/product)
 router.get('/', orderController.getAllOrders);
 // //url read one-detail - GET (/api/product/:id)

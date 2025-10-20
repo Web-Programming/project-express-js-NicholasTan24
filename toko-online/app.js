@@ -41,7 +41,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/product', productRouter); //gunakan router product
 // untuk route yang kita daftarkan tadi
-app.use('/api/product', apiProductRouter); //route untuk API produk
+app.use('/api/products', apiProductRouter); //route untuk API produk
 app.use('/api/users', apiUserRouter); //route untuk API user
 app.use('/api/orders', apiOrderRouter); //route untuk API order
 app.use('/product/:id/review', reviewRouter); //route untuk API produk
