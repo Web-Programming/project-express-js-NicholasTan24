@@ -1,28 +1,34 @@
 ### GET All Product
-GET http://localhost:3000/api/product
+GET http://localhost:3000/api/orders
 
 ### Insert New Product
-POST http://localhost:3000/api/product
+POST http://localhost:3000/api/orders
 content-type: application/json
 
 {
-    "name": "Laptop RGB",
-    "price": 10000000,
-    "description" : "Laptop dengan lampu RGB keren",
-    "stock" : 10,
+    "user": "68f2109a300764d7bbd91541",
+    "orderItems": [{
+        "product": "68eb6fd6364f32a890e0ab45",
+        "quantity": 2
+    }]
 }
+
 
 ### Detail Product
 GET http://localhost:3000/api/produk/68ecc2774d49272f5636f31f
 
 ### Update Product
-PUT http://localhost:3000/api/produk/68ecc2774d49272f5636f31f
+PUT http://localhost:3000/api/orders/68f4c18fdb4a73c06131e9bb
 content-type: application/json
 
 {
-    "price": "600000",
-    "stock" : 5
+    "user": "68f2109a300764d7bbd91541",
+    "orderItems": [{
+        "product": "68eb6fd6364f32a890e0ab45",
+        "quantity": 3,
+        "status": "Processing"
+    }]
 }
 
 ### Delete Product
-DELETE http://localhost:3000/api/produk/68ecc2774d49272f5636f31f
+DELETE http://localhost:3000/api/produk/68f4c18fdb4a73c06131e9bb
